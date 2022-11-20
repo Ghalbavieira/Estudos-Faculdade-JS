@@ -1,2 +1,4 @@
 # Estudos-Faculdade-JS
-Programação Cliente Com Javascript
+Materia - Programação Cliente Com Javascript
+
+Exercicios e explicacōes das aulas.
