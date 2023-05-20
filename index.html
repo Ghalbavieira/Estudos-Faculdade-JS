@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de Estudos</title>
+</head>
+<body>
+    
+    <label for="weather">Selecione o tipo de clima hoje: </label>
+    <select id="weather">
+      <option value="">--Faça uma escolha do dia--</option>
+      <option value="sunny">Ensolarado</option>
+      <option value="rainy">Chuvoso</option>
+      <option value="snowing">Nevando</option>
+      <option value="overcast">Nublado</option>
+    </select>
+    
+    <p></p>
+    
+
+<script>
+var select = document.querySelector('select');
+var para = document.querySelector('p');
+
+select.addEventListener('change', setWeather);
+
+function setWeather() {
+  var choice = select.value;
+
+  if (choice === 'sunny') {
+    para.textContent = 'Está bom e ensolarado lá fora hoje. Use shorts! Vá à praia ou ao parque e tome um sorvete.';
+  } else if (choice === 'rainy') {
+    para.textContent = 'A chuva está caindo lá fora; leve uma capa de chuva e um guarda chuva, e não fique fora por muito tempo.';
+  } else if (choice === 'snowing') {
+    para.textContent = 'A neve está caindo - está congelando! Melhor ficar em casa com uma xícara de chocolate quente ou ir construir um boneco de neve.';
+  } else if (choice === 'overcast') {
+    para.textContent = 'Não está chovendo, mas o céu está cinza e sombrio; pode virar a qualquer minuto, então leve uma capa de chuva para garantir.';
+  } else {
+    para.textContent = '';
+  }
+}
+
+</script>
+
+</body>
+</html>
