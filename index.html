@@ -7,7 +7,14 @@
     <title>Trilha de Estudos</title>
 </head>
 <body>
-    
+
+    <p>Aqui, temos um elemento HTML "<select>" que nos permite fazer escolhas de clima diferentes e um simples parágrafo.
+        No JavaScript, estamos armazenando uma referência para ambos os elementos "<select>" e "<p>", e adicionando um listener de evento ao elemento <select> para que, quando o valor for alterado, a função setWeather() é executada.
+        Quando esta função é executada, primeiro definimos uma variável chamada choice para o valor atual selecionado no elemento <select>. Em seguida, usamos uma instrução condicional para mostrar um texto diferente dentro do parágrafo, dependendo de qual é o valor de choice . Observe como todas as condições são testadas nos blocos else if() {...}, com exceção do primeiro, que é testado em um bloco if() {...}.
+        A última escolha, dentro do bloco else {...}, é basicamente uma opção de "último recurso" — o código dentro dele será executado se nenhuma das condições for true. Nesse caso, ele serve para esvaziar o texto do parágrafo, se nada for selecionado, por exemplo, se um usuário decidir selecionar novamente a opção de espaço reservado "- Make a choice--" mostrada no início.</p>
+
+
+
     <label for="weather">Selecione o tipo de clima hoje: </label>
     <select id="weather">
       <option value="">--Faça uma escolha do dia--</option>
